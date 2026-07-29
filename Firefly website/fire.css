@@ -1,0 +1,26 @@
+body {
+    background-image: url("https://static.wikia.nocookie.net/houkai-star-rail/images/f/f7/Firefly_Character_Introduction_Details_2.png/revision/latest?cb=20240611044041");
+    background-size: 1450px;
+    height: 470vh;
+    overflow-y: scroll;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    margin-top: 50px;
+}
+
+nav {
+    background: #222;
+    padding: 10px;
+    border-radius: 20px;
+}
+nav a {
+    color: white;
+    margin: 10px;
+    text-decoration: none;
+}
+nav a:hover {
+    color: orange;
+}

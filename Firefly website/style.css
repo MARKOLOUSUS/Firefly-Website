@@ -1,0 +1,324 @@
+body {
+  font-family: cursive;
+  background-image: url("https://wallpapercave.com/wp/wp13561106.png");
+  background-position: top;
+  background-size: 1600px;
+  background-blend-mode: multiply;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  margin-top: 50px;
+}
+
+header {
+  width: 240px;
+  height: 240px;
+  background-image: url("https://i.pinimg.com/736x/ea/14/2e/ea142e3eb93d0a8ca9d5cec0f8e537c8.jpg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+}
+
+img {
+  width: 200px;
+  border-radius: 100px;
+  cursor: pointer;
+  transition: transform 0.5s ease-in-out;
+}
+
+#btn {
+  padding: 10px;
+  margin-top: 10px;
+  cursor: cell;
+  background-color: aqua;
+  padding: 20px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;   /* allows next row */
+  gap: 20px;
+  width: 440px;      /* controls total width */
+  justify-content: center;
+}
+
+.box1 {
+  width: 100px;
+  height: 100px;
+  background-position: center;
+  background-size: 100px 100px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.5s ease-in-out;
+  cursor: move;
+}
+
+/* Box animations */
+.enlarge:hover {
+  transform: scale(1.5);
+}
+
+.rotateQ:hover {
+  transform: rotate(-20deg);
+}
+.rotateE:hover {
+  transform: rotate(20deg);
+}
+.rotateZ:hover {
+  transform: rotate(-145deg);
+}
+.rotateC:hover {
+  transform: rotate(145deg);
+}
+
+.translateYu:hover {
+  transform: translateY(-50px);
+}
+.translateYd:hover {
+  transform: translateY(50px);
+}
+
+.translateXu:hover {
+  transform: translateX(-50px);
+}
+.translateXd:hover {
+  transform: translateX(50px);
+}
+
+
+.card {
+  position: relative;
+  background: #222;
+  overflow: hidden;
+  padding: 40px;
+  border-radius: 10px;
+  margin: 10px;
+}
+.card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: 0.3s;
+}
+.card:hover::before {
+  opacity: 1;
+  transform: scale(0.9);
+  transition: 1s;
+}
+.card:hover {
+  transform: scale(1.1);
+}
+
+#c1::before{
+  background-image: url("https://tse3.mm.bing.net/th/id/OIP.-1M9wEyeO3wajyuXkJL5mgHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3");
+  background-size: contain;
+}
+#c2::before{
+  background-image: url("https://static1.srcdn.com/wordpress/wp-content/uploads/2024/06/honkai-star-rail-sam-complete-combustion-state.jpg");
+}
+#c3::before{
+  background-image: url("https://i.pinimg.com/originals/f2/2b/f8/f22bf81d5d7b42a3bb83a9ab020242df.jpg");
+}
+#c4::before{
+  background-image: url("https://static.beebom.com/wp-content/uploads/2025/02/new-Firefly-Skin-leaked-in-Honkai-Star-Rail.jpg?w=1168&quality=75");
+}
+
+nav {
+  background: linear-gradient(140deg,black,cyan, cyan);
+  padding: 10px;
+  border-radius: 60px 20px 20px 60px;
+  display:flex;
+  align-items: center;
+}
+nav a {
+  color: rgb(2, 2, 2);
+  margin: 10px;
+  text-decoration: none;
+}
+nav a:hover {
+  color: orange;
+}
+
+
+table{
+  background-color: silver;
+}
+.text1 {
+  text-shadow: 2px 2px 5px black;
+}
+.text2 {
+  text-shadow: 4px 4px 5px rgb(234, 6, 204);
+}
+
+/*image to gif*/
+.broke {
+  width: 250px;
+  height: 300px;
+  background-image: url("https://s3.getstickerpack.com/storage/uploads/sticker-pack/honkai-star-rail-pom-pom-gallery-v23/sticker_2.png?dcc236d268c15b221c094623c5de3a03&d=200x200");
+  background-size: cover;
+  background-position: center;
+  transition: 0.3s ease-out;
+  padding: 40px;
+}
+.broke:hover {
+  background-image: url("https://upload-os-bbs.hoyolab.com/upload/2024/07/23/1066506/45c962e00a9b5f2fd802af1b17c39f9c_5801291636255595016.gif");
+}
+/*gif to image*/
+.bounce {
+  width: 250px;
+  height: 300px;
+  background-image: url("https://media.tenor.com/Yzc7R9sHe2YAAAAC/sam-hsr.gif");
+  background-size: cover;
+  background-position: center;
+  transition: 0.3s;
+  padding: 40px;
+}
+.bounce:hover {
+  background-image: url("https://www.pockettactics.com/wp-content/sites/pockettactics/2024/01/Honkai-Star-Rail-Sam-1.jpg");
+}
+
+
+#cursur:hover {
+  cursor: move;
+}
+
+/*spinning*/
+.spin-coin {
+  display: flex;
+  flex-direction: row;
+}
+.box2 {
+  width: 100px;
+  height: 100px;
+  background-image: url("https://media1.tenor.com/m/BHaRmO7b-bMAAAAC/hsr-honkai-star-rail.gif");
+  background-position: center;
+  background-size: 100px 100px;
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: none;
+}
+
+
+.A {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap /* allows stacking on small screens */
+}
+.A h2{
+  max-width: 400px;
+  color: azure;
+  text-align: justify;
+}
+.no-radius {
+  border-radius: 0;
+}
+
+.smol {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+}
+.smoll{
+  width: 100px;
+  height: 100px;
+}
+
+.moving {
+  position: relative;
+  animation: moveSide 2s infinite linear;
+}
+@keyframes moveSide {
+  0% {transform: rotate(0deg);}
+  100% {transform: rotate(360deg);}
+}
+
+table {
+  border-collapse: collapse;
+  width: 25%;
+}
+th, td {
+  border: 1px solid rgb(0, 0, 0);
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+th {
+  background-color: #04828bb0;
+  color: white;
+}
+
+.C{
+  display: grid;
+}
+
+video{
+  height: auto;
+  width: 100%;
+}
+
+.growing {
+  display: flex;
+  width: 300px;
+  overflow: hidden;
+}
+.grow-box {
+  flex: 1;
+  transition: flex 0.5s;
+}
+.grow-box:hover {
+  flex: 3;
+  background-color: red;
+}
+.box {
+  background-color: silver;
+  height: 100px;
+  margin: 5px;
+  border-radius: 10%;
+}
+
+.sliding {
+  animation: slider 6s linear infinite;
+}
+@keyframes slider {
+  0% {transform: translateX(0);}
+  33% {transform: translateX(-90%);}
+  66% {transform: translateX(-150%);}
+  100% {transform: translateX(0);}
+}
+.boxer{
+  background-color: silver;
+  background-position: center;
+  border-radius: 0;
+}
+.boxer:hover {
+  flex: 3;
+  background-color: red;
+}
+
+.boxtocircle{
+  height: 100px;
+  width: 100px;
+  background-color: antiquewhite;
+}
+.circletobox{
+  animation: circle-box 3s linear infinite;
+}
+@keyframes circle-box{
+  0%{transform: translateX(-100px); border-radius: 0;}
+  100%{transform: translateX(300px); border-radius: 50%;}
+}
