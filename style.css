@@ -5,6 +5,7 @@ body {
   background-size: 1600px;
   background-blend-mode: multiply;
   text-align: center;
+  background-attachment: fixed;
 
   display: flex;
   flex-direction: column;
@@ -14,14 +15,35 @@ body {
 }
 
 header {
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.stFire{
   width: 240px;
   height: 240px;
   background-image: url("https://i.pinimg.com/736x/ea/14/2e/ea142e3eb93d0a8ca9d5cec0f8e537c8.jpg");
   background-size: cover;
   background-position: center;
   border-radius: 10px;
-  color: white;
-  text-align: center;
+}
+
+.inside{
+  background-image: url("https://wallpapercave.com/wp/wp14478212.jpg");
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-position: center;
+  background-size: cover;
+}
+
+.insidecontain {
+  font-size: 200px;
+  font-family: Impact;
+  margin: 0;
+  line-height: 1;
 }
 
 img {
@@ -322,3 +344,4 @@ video{
   0%{transform: translateX(-100px); border-radius: 0;}
   100%{transform: translateX(300px); border-radius: 50%;}
 }
+

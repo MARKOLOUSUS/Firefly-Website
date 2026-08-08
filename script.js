@@ -18,3 +18,13 @@ function checkPassword(event) {
     alert('Hint: button on home');
   }
 }
+
+function TellSet(Tel){
+  document.getElementById("Set").innerText = `${Tel}, you clicked me`
+}
+
+
+
+function changeVid(){
+  document.getElementById("Trailer").setAttribute("src", "Trailer2.mp4");
+}
